@@ -80,7 +80,24 @@ section{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+   
+  }
 
+  .overVideo {
+    position: absolute;
+    top: 420%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    color: antiquewhite;
+  }
 
 .logo-text {
     font-size: 22px;
@@ -91,8 +108,8 @@ section{
 .logo-image {
     width: 550px;
     height: 175px;
-    position: absolute;
-    left: 200px;
+    position: relative;
+    left: 50px;
     top: 10px;
 }
 
@@ -180,7 +197,7 @@ color: white;
     margin: 16px auto 0 auto;
 
 }
-.destinations-container{
+.Lessons-container{
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -201,32 +218,32 @@ color: white;
 
 }
 
-.destinations img{
+.Lessons img{
 
     width: 400px;
     
 }
 
-.activities_img{
+.MoreLessons img{
     height: 100px;
 }
 
 
 
-.destinations-item{
+.Lessons-item{
     overflow: hidden;
     position: relative;
     padding: 10px;
 
 }
 
-.destinations-item img,
-    .destinations-item .destinations-overlay{
+.Lessons-item img,
+    .Lessons-item .Lessons-overlay{
 transition: all 0.4s ease;
 
 }
 
-.destinations-overlay{
+.Lessons-overlay{
 
     position: absolute;
     top: 0;
@@ -240,14 +257,14 @@ transition: all 0.4s ease;
     opacity: 0;
 }
 
-.destinations-overlay h4,
-    .destinations-overlay h6{
+.Lessons-overlay h4,
+    .Lessons-overlay h6{
 
     color: white;
 
     }
 
-.destinations-item:hover .destinations-overlay{
+.Lessons-item:hover .Lessons-overlay{
 
     opacity: 1;
 
@@ -260,7 +277,7 @@ transition: all 0.4s ease;
 }
 
 
-.destinations-item:hover img{
+.Lessons-item:hover img{
 
     transform: scale(1.1);
 }
@@ -289,7 +306,7 @@ form .form-control:focus{
 
 #cta {
 
-    background-color: rgb(55, 123, 165);
+    background-color: rgb(221, 175, 23);
     font-size: larger;
 
 }
