@@ -13,6 +13,13 @@ h1{
 
     text-shadow: 2px 2px #3b3dd8;
 }
+
+.whitetext
+ {
+
+color: cornsilk;
+    text-shadow: 2px 2px #3b3dd8;
+ }
 h1,h2,h3,h4,h5,h6{
 
 font-weight: 700;
@@ -80,7 +87,7 @@ section{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#myVideo {
+.myVideo {
     position: relative;
     right: 0;
     bottom: 0;
@@ -89,15 +96,14 @@ section{
    
   }
 
-  .overVideo {
-    position: absolute;
-    top: 420%;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    color: antiquewhite;
-  }
+  
+  .overlayText {
+    position:absolute;
+     top:450%;
+     z-index:1;
+   }
+
+ 
 
 .logo-text {
     font-size: 22px;
@@ -107,7 +113,7 @@ section{
 
 .logo-image {
     width: 550px;
-    height: 175px;
+    height: 210px;
     position: relative;
     left: 50px;
     top: 10px;
@@ -115,7 +121,7 @@ section{
 
 .navbar .nav-link {
 
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -374,3 +380,31 @@ footer .footer-links a:hover{
     color: coral;
 
 }
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+ }
+
+ .navbar-inverse .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+
+ }
+
+ .custom-toggler .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }

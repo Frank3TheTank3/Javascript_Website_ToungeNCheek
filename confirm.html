@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/boxicons.min.css">
     <link rel="stylesheet" href="css/stlye.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
     <title>Tounge 'n Cheek</title>
     
   </head>
@@ -29,28 +30,11 @@
             <ul class="navbar-nav ms-auto">
     
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link"  href="#lessons">Lessons</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#booking">Booking</a>
-              </li>
-              
-              
-              <li class="nav-item">
-                <a class="nav-link"  href="#aboutus">About Us</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link"  href="#contact">Contact</a>
-              </li>
              
             </ul>
-            <i class='bx bx-menu'></i>
           </div>
         </div>
     </nav>
@@ -58,29 +42,28 @@
     
     <div class="former">
         <form  onsubmit="SendConfirm().return,false">
-          <div class="form-group">
-            <h2 class="centeredinside">Book your language:</h2>
+          <div class="form-group centered1">
+            <h2  class="centeredinside">Check your booking:</h2>
   
-            <label for="conf_usrnm">User Name:</label> <br>
-            <label for="conf_frstname">First Name:</label> <br>
-            <label for="conf_fmlynm">Family Name:</label> <br>
-            <label for="conf_fulladress">Full Adress:</label> <br>
-            <label for="conf_tel">Tel:</label> <br>
-            <label for="conf_email">Email:</label> <br>
+            <p id="conf_usrnm">User Name:</p> <br>
+            <p id="conf_frstname">First Name:</p> <br>
+            <p id="conf_fmlynm">Family Name:</p> <br>
+            <p id="conf_fulladress">Full Adress:</p> <br>
+            <p id="conf_tel">Tel:</p> <br>
+            <p id="conf_email">Email:</p> <br>
             
           </div>
           <div class="form-group2">
-            <label for="pwd">Confirm your Booking now:</label>
+            
+            <input type="submit" class="form-control button centeredinside" id="sub" value="Weiter"/>
 
            
-           
-            <input type="submit" class="form-control button centeredinside" id="sub" value="Weiter"/>
           </div>
         </form>
 
         <a href="booking.html">
 
-          <button href="booking.html" class="button"> Review Booking</button>
+          <button href="booking.html" class="form-control button centeredinside"> Review Booking</button>
         </a>
       </div>
 
@@ -161,6 +144,7 @@
     </footer>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/fun.js"></script>
+    <script src="js/confetti.js"></script>
    
 
     <script >LoadConfirmPage()</script>

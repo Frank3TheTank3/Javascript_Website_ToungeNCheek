@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <img src="img/mainlogo2.png" alt="" class="navbar-brand logo-image">
+            <img src="img/toungecheeklogov3.png" alt="" class="navbar-brand logo-image">
           <button class="navbar-toggler" type="button" 
           data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
           aria-controls="navbarSupportedContent" aria-expanded="false" 
@@ -33,11 +33,11 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link"  href="#lessons">Lessons</a>
+                <a class="nav-link"  href="#Lessons">Lessons</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#booking">Booking</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               
               
@@ -50,33 +50,34 @@
               </li>
              
             </ul>
-            <i class='bx bx-menu'></i>
           </div>
         </div>
     </nav>
 
     <section id="home">
-        <canvas id="confetti">
         <div class="container text-center">
 
             <div class="row justify-content-center">
 
             <div class="col-md-10">
-                <h1 class="text-white display-4">Learn the world's funniest languages.</h1>
                 
-
-
-            </div>
-
+                
+                <h1  class="text-white display-4 ">Learn the world's funniest languages.</h1>
 
             </div>
 
+            <canvas id="confetti">
+                <h1  class="text-white display-4 ">Congratulations for Booking a Lesson!</h1>
+            </canvas>
+            </div>
+
+        
+        
+       
 
 
         </div>
-
-
-    </canvas>
+        
     
     </section>  
 
@@ -97,9 +98,9 @@
                 <img class="displayimage" src="img/berner.jpg" alt="">
                 <div class="Lessons-overlay">
                     <div>
-                    <h4>Berner Dütsch</h4>
+                    <h4 id="lang_bern">Berner Dütsch</h4>
                     <h6>Äuäää!</h6>
-                    <a href="booking.html" class="btn btn-brand"> Book now!</a>
+                    <button onclick="GoToBookingPage(0)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -111,7 +112,7 @@
                     <div>
                     <h4>The Whistling Language</h4>
                     <h6>Whistles: "Hello there!"</h6>
-                    <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                    <button onclick="GoToBookingPage(1)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -123,7 +124,7 @@
                     <div>
                     <h4>The Click Language</h4>
                     <h6>*click* *click* *click*</h6>
-                    <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                    <button onclick="GoToBookingPage(2)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -135,7 +136,7 @@
                     <div>
                     <h4>Chewbaca </h4>
                     <h6>*Undefined screaming*</h6>
-                    <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                    <button onclick="GoToBookingPage(3)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +148,7 @@
                     <div>
                         <h4>Mime Language </h4>
                         <h6>*Points to book now ->*</h6>
-                        <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                        <button onclick="GoToBookingPage(4)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@
                     <div>
                         <h4>Sign Language </h4>
                         <h6>*Showing the OK fingers*</h6>
-                        <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                        <button onclick="GoToBookingPage(5)" class="btn btn-brand"> Book now!</button>
                     </div>
                 </div>
             </div>
@@ -185,7 +186,7 @@
                             <div>
                             <h4>Horse Whispering</h4>
                             <h6>*Whispers: It's all good!*</h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(6)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
@@ -198,7 +199,7 @@
                             <h4>Telepathic Communication</h4>
                             <h6>*Thinking: Yes.*
                             </h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(7)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
@@ -211,7 +212,7 @@
                             <h4>The Dog Language</h4>
                             <h6>*Woof* Woof* *Rrrr*
                             </h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(8)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
@@ -224,7 +225,7 @@
                             <h4>Martian </h4>
                             <h6>Greetings Earthlings.
                             </h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(9)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
@@ -237,7 +238,7 @@
                             <h4>Reto Romanisch</h4>
                             <h6>Allegra!
                             </h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(10)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
@@ -250,99 +251,106 @@
                             <h4>Gang Signs</h4>
                             <h6>Westcoast! Eastcoast! Northcoast!
                             </h6>
-                            <a href="booking.html"  class="btn btn-brand"> Book now!</a>
+                            <button onclick="GoToBookingPage(11)" class="btn btn-brand"> Book now!</button>
                             </div>
                         </div>
                     </div>
                 </div>
     </section>
-    <video autoplay muted loop id="myVideo">
-        <source src="vids/backspace.mp4" type="video/mp4">
-    </video>
+    
+    
 
-    <section id="features" class="overVideo">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 section-intro">
-                    <h1>Featured Services</h1>
+    <section id="features" class="whitetext">
 
-                    <div class="hline"></div> 
+        <video style="z-index: -1;" autoplay muted loop id="myVideo">
+            <source src="vids/backspace.mp4" type="video/mp4">
+       </video>
 
-                </div>
-            </div>
+        <div class="container text-center">
 
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bxs-user-check' ></i>
-                    </div>
-                    <div>
-                        <h5 class="title-sm">Free Vocabulary Cards</h5>
-                        <p> We offer free vocabulary cards for people to learn easily.</p>
+       
+            <div style="z-index: 1;"class="container overlayText">
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1 class="whitetext">Featured Services</h1>
+
+                        <div class="hline"></div> 
+
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bxs-user-check' ></i>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bxs-user-check' ></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">Free Vocabulary Cards</h2>
+                            <p> We offer free vocabulary cards for people to learn easily.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="title-sm">Telephone Support</h5>
-                        <p> We are availabe from 08.00 - 17.00.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bxs-user-check' ></i>
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bxs-user-check' ></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">Telephone Support</h2>
+                            <p> We are availabe from 08.00 - 17.00.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="title-sm">20% coupon for our store</h5>
-                        <p> If you need books, penciles or food for studying: we have you covered.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bxs-user-check' ></i>
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bxs-user-check' ></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">20% coupon for our store</h2>
+                            <p> If you need books, penciles or food for studying: we have you covered.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="title-sm">Wolrd wide specialists</h5>
-                        <p>We have accumulated a large connection of specialists in these languages
-                            who can help you on your quest to learn.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bxs-user-check' ></i>
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bxs-user-check' ></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">Wolrd wide specialists</h2>
+                            <p>We have accumulated a large connection of specialists in these languages
+                                who can help you on your quest to learn.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="title-sm">Online Quizes and Exams</h5>
-                        <p>We have programmed a online learning plattform, that users
-                            can use to refine their linuistic abilities.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6 feature d-flex">
-                    <div class="icon-box me-3">
-                        <i class='bx bx-flag'></i>
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bxs-user-check' ></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">Online Quizes and Exams</h2>
+                            <p>We have programmed a online learning plattform, that users
+                                can use to refine their linuistic abilities.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="title-sm">Learn on mars</h5>
-                        <p> For Martian speakers we offer a trip to Mars to get
-                            to know the locals.
-                        </p>
+
+                    <div class="col-lg-4 col-sm-6 feature d-flex">
+                        <div class="icon-box me-3">
+                            <i class='bx bx-flag'></i>
+                        </div>
+                        <div>
+                            <h2 class=" whitetext">Learn on mars</h2>
+                            <p> For Martian speakers we offer a trip to Mars to get
+                                to know the locals.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
             </div>
         </div>
-  
+    
     </section>
 
     <section id="logos" class="bg-light">
@@ -447,7 +455,7 @@
                             who share this common interest.
                         </p>
                         <div class="social-icons">
-                            <a href="https://github.com/Frank3TheTank3/bs5html_hammock"> <i class="bx bxl-github"> </i> </a>
+                            <a  href="https://github.com/Frank3TheTank3/"> <i style="width: 50px;" class="bx bxl-github"> </i> </a>
                         </div>
                     </div>
                        
@@ -501,8 +509,9 @@
     </footer>
 
     <script src="js/bootstrap.bundle.js"></script>
-    
+    <script src="js/fun.js"></script>
     <script src="js/confetti.js"></script>
+
 
   </body>
 </html>
