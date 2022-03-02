@@ -88,21 +88,21 @@ section{
 }
 
 .myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    position:relative;
+    z-index:-1;
    
   }
 
   
-  .overlayText {
+ 
+   .overlayText {
     position:absolute;
-     top:450%;
-     z-index:1;
+    top:0;
+    left:0;
+    z-index:1;
+    justify-self: center;
+    text-align: center;
    }
-
  
 
 .logo-text {
@@ -115,7 +115,6 @@ section{
     width: 550px;
     height: 210px;
     position: relative;
-    left: 50px;
     top: 10px;
 }
 

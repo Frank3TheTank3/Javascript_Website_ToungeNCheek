@@ -58,7 +58,7 @@ function SendInput()
     var emailStatus = null;
     var telStatus = null;
     var quickEmailCheck = telefonNumber.toString().startsWith("07");
-
+    SetStorage();
     if(emailadress !== null)
     {
 
@@ -114,7 +114,7 @@ function SendInput()
     console.log(telStatus);
     if(confirmpassword == password && emailStatus === true && telStatus === true && requiredEmail === true && requiredTel === true)
     {
-        SetStorage();
+        
         
         window.history.pushState(null,null,'confirm.html');
     }
@@ -159,12 +159,13 @@ function LoadBookingPage()
 //Confirm Page - Load All Fields
 function LoadConfirmPage()
 {
+    document.getElementById("conf_lesson").innerText = "Lesson: " + allLession[localStorage.getItem("lesson")];
     document.getElementById("conf_usrnm").innerText = "Username: " + localStorage.getItem("un");
     document.getElementById("conf_frstname").innerText = "First Name: " + localStorage.getItem("frst");
-    document.getElementById("conf_fmlynm").innerText = "Family Name" + localStorage.getItem("fmly");
-    document.getElementById("conf_fulladress").innerText = "Full Adress" + localStorage.getItem("fulladrs");
-    document.getElementById("conf_tel").innerText = "Telefon Nr" + localStorage.getItem("tel");
-    document.getElementById("conf_email").innerText = "E-Mail" + localStorage.getItem("email");
+    document.getElementById("conf_fmlynm").innerText = "Family Name: " + localStorage.getItem("fmly");
+    document.getElementById("conf_fulladress").innerText = "Full Adress: " + localStorage.getItem("fulladrs");
+    document.getElementById("conf_tel").innerText = "Telefon Nr: " + localStorage.getItem("tel");
+    document.getElementById("conf_email").innerText = "E-Mail: " + localStorage.getItem("email");
    
 
 }
