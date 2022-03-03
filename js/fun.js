@@ -1,5 +1,9 @@
 
-const allLession = ["Bern-Dütsch", "The Whistle Language", "Click Language", "Chewbaca", "Mime Language", "Sign Language", "Horse Whispering"];
+const allLession = ["Bern-Dütsch", "The Whistle Language", "Click Language", 
+"Chewbaca", "Mime Language", "Sign Language", "Horse Whispering", "Telepathic Communication",
+"Dog Language", "Martian", "Reto Romanisch", "Gang-Signs"
+
+];
 window.scrollTo({ top: 0, behavior: 'smooth' });
 function SetStorage()
 {
@@ -159,7 +163,8 @@ function LoadBookingPage()
 //Confirm Page - Load All Fields
 function LoadConfirmPage()
 {
-    document.getElementById("conf_lesson").innerText = "Lesson: " + allLession[localStorage.getItem("lesson")];
+    var LessonNumber = localStorage.getItem("lesson");
+    document.getElementById("conf_lesson").innerText = "Lesson: " + allLession[LessonNumber];
     document.getElementById("conf_usrnm").innerText = "Username: " + localStorage.getItem("un");
     document.getElementById("conf_frstname").innerText = "First Name: " + localStorage.getItem("frst");
     document.getElementById("conf_fmlynm").innerText = "Family Name: " + localStorage.getItem("fmly");

@@ -87,6 +87,8 @@
   if(ShowConfetti)
   { update();
     draw();
+    document.getElementById("congratulationsText").style.display = "block";
+    canvas.style.display = "block";
 
     }
 
