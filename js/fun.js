@@ -5,6 +5,10 @@ const allLession = ["Bern-Dütsch", "The Whistle Language", "Click Language",
 
 ];
 window.scrollTo({ top: 0, behavior: 'smooth' });
+
+var audio = new Audio("/prr2.mp3");
+      audio.play();
+
 function SetStorage()
 {
     localStorage.setItem("un", document.getElementById("usrnm").value);
@@ -23,7 +27,6 @@ function SetStorage()
 function GoToBookingPage(lessonNumber)
 {
     console.log(lessonNumber);
-    
     localStorage.setItem("lesson", lessonNumber);
     window.history.pushState({urlPath:'/booking.html'},null,'/booking.html');
     location.reload();
@@ -215,4 +218,4 @@ function LogIn()
 };
 
 
-
+ 
