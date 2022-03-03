@@ -4,6 +4,18 @@ const allLession = ["Bern-Dütsch", "The Whistle Language", "Click Language",
 "Dog Language", "Martian", "Reto Romanisch", "Gang-Signs"
 
 ];
+const allTeachers = ["Ludi Wager", "Lukas Faraday", "Umgucu Baluda", 
+"Kirk Falcon", "Bob Dishes", "Harold Lookner", "Francis Nicholls", "Xavier X",
+"Rex", "A-X0A", "Bernard Strata", "Mitchel Green"
+
+];
+
+const allCosts = ["450 CHF", "350 CHF", "380 CHF", 
+"590 CHF", "250 CHF", "420 CHF", "550 CHF", "You should already know",
+"10 CHF", "480 CHF", "400 CHF", "250 CHF"
+
+];
+
 window.scrollTo({ top: 0, behavior: 'smooth' });
 
 var audio = new Audio("/prr2.mp3");
@@ -167,6 +179,8 @@ function LoadBookingPage()
 function LoadConfirmPage()
 {
     var LessonNumber = localStorage.getItem("lesson");
+    document.getElementById("conf_teacher").innerText = "Teacher: " + allTeachers[LessonNumber];
+    document.getElementById("conf_cost").innerText = "Costs: " + allCosts[LessonNumber];
     document.getElementById("conf_lesson").innerText = "Lesson: " + allLession[LessonNumber];
     document.getElementById("conf_usrnm").innerText = "Username: " + localStorage.getItem("un");
     document.getElementById("conf_frstname").innerText = "First Name: " + localStorage.getItem("frst");
