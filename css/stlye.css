@@ -316,10 +316,13 @@ form .form-control:focus{
 
 }
 
-#ctalu {
+#cta2 {
 
-    background-color: rgb(55, 123, 165);
-    font-size: larger;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/imper.jpg);
+    height: 500px;
 
 }
 
