@@ -21,3 +21,7 @@ Where can I find the source files to this project?
 They can be found on GitHub by using this link to my own repository:
 
 https://github.com/Frank3TheTank3/ToungeNCheek
+
+Link to my Figma Wireframe for this project:
+
+https://www.figma.com/file/Lll7ezXZF6hrzYOXBKy5jv/FIgma-Sprachkurs-Projekt?node-id=0%3A1
